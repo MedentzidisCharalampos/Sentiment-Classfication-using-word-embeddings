@@ -33,7 +33,7 @@ Compile and train the model using the `Adam` optimizer and `BinaryCrossentropy` 
 
 Visualize the embeddings
 
-To visualize the embeddings, upload them to the embedding projector.
+To visualize the embeddings, upload them to the embedding projector (http://projector.tensorflow.org/).
 
 Click on "Load data".
 
