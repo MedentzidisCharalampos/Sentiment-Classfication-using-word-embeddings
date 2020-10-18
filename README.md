@@ -2,11 +2,11 @@
 
 # Word Embeddings
 
-1. Word embeddings give us a way to use an efficient, dense representation in which similar words have a similar encoding.
-2. An embedding is a dense vector of floating point values.
-3. Instead of specifying the values for the embedding manually, they are trainable parameters (weights learned by the model during training, in the same way a model learns weights for a dense layer).  
-4. It is common to see word embeddings that are 8-dimensional (for small datasets), up to 1024-dimensions when working with large datasets.  
-5. A higher dimensional embedding can capture fine-grained relationships between words, but takes more data to learn.
+Word embeddings give us a way to use an efficient, dense representation in which similar words have a similar encoding.
+1. An embedding is a dense vector of floating point values.
+2. Instead of specifying the values for the embedding manually, they are trainable parameters (weights learned by the model during training, in the same way a model learns weights for a dense layer).  
+3. It is common to see word embeddings that are 8-dimensional (for small datasets), up to 1024-dimensions when working with large datasets.  
+4. A higher dimensional embedding can capture fine-grained relationships between words, but takes more data to learn.
 
 
 # The Dataset  
@@ -39,10 +39,10 @@ Compile and train the model using the `Adam` optimizer and `BinaryCrossentropy` 
 
 To visualize the embeddings, upload them to the embedding projector (http://projector.tensorflow.org/).
 
-Click on "Load data".
+1. Click on "Load data".
 
-Upload the two files you created above: vecs.tsv and meta.tsv.
+2. Upload the two files you created above: vecs.tsv and meta.tsv.
 
-The embeddings you have trained will now be displayed. You can search for words to find their closest neighbors. For example, try searching for "beautiful". You may see neighbors like "wonderful".
+3. The embeddings you have trained will now be displayed. You can search for words to find their closest neighbors. For example, try searching for "beautiful". You may see neighbors like "wonderful".
 
 
