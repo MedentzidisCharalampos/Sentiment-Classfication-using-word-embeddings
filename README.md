@@ -19,9 +19,9 @@ Create a Classification Model
 
 Use the Keras Sequential API to define the sentiment classification model. In this case it is a "Continuous bag of words" style model.
 
-1. The TextVectorization layer transforms strings into vocabulary indices. You have already initialized vectorize_layer as a TextVectorization layer and built it's vocabulary by calling adapt on text_ds. Now vectorize_layer can be used as the first layer of your end-to-end classification model, feeding tranformed strings into the Embedding layer.
+1. The TextVectorization layer transforms strings into vocabulary indices. The vectorize_layer can be used as the first layer of your end-to-end classification model, feeding tranformed strings into the Embedding layer.
 
-2. The Embedding layer takes the integer-encoded vocabulary and looks up the embedding vector for each word-index. These vectors are learned as the model trains. The vectors add a dimension to the output array. The resulting dimensions are: (batch, sequence, embedding).
+2. The Embedding layer takes the integer-encoded vocabulary and looks up the embedding vector for each word-index. These vectors are learned as the model trains. The vectors add a dimension to the output array. The resulting dimensions are: (batch, sequence, embedding). The embedded dimesion is 16.
 
 3. The GlobalAveragePooling1D layer returns a fixed-length output vector for each example by averaging over the sequence dimension. This allows the model to handle input of variable length, in the simplest way possible.
 
