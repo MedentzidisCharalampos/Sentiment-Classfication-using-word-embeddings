@@ -1,4 +1,4 @@
-# Sentiment-Classfication-using-word-embeddings
+# Sentiment-Classfication-using-Word-Embeddings
 
 # Word Embeddings
 
