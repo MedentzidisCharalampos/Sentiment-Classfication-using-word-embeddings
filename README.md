@@ -1,21 +1,21 @@
 # Sentiment-Classfication-using-word-embeddings
 
-#Word Embeddings
+# Word Embeddings
 
 Word embeddings give us a way to use an efficient, dense representation in which similar words have a similar encoding. An embedding is a dense vector of floating point values. Instead of specifying the values for the embedding manually, they are trainable parameters (weights learned by the model during training, in the same way a model learns weights for a dense layer). It is common to see word embeddings that are 8-dimensional (for small datasets), up to 1024-dimensions when working with large datasets. A higher dimensional embedding can capture fine-grained relationships between words, but takes more data to learn.
 
 
-The Dataset  
+# The Dataset  
 We use the  Large Movie Review Dataset more can be found there: http://ai.stanford.edu/~amaas/data/sentiment/. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. 
 
-Text Preprocessing
+# Text Preprocessing
 
 We create a Vectorization Layer to:
 1. Strip HTML break tags
 2. Split the sentences into words
 3. Map words to integers
 
-Create a Classification Model
+# Create a Classification Model
 
 Use the Keras Sequential API to define the sentiment classification model. In this case it is a "Continuous bag of words" style model.
 
@@ -31,7 +31,7 @@ Use the Keras Sequential API to define the sentiment classification model. In th
 
 Compile and train the model using the `Adam` optimizer and `BinaryCrossentropy` loss. 
 
-Visualize the embeddings
+# Visualize the embeddings
 
 To visualize the embeddings, upload them to the embedding projector (http://projector.tensorflow.org/).
 
