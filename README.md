@@ -16,7 +16,7 @@ We create a Vectorization Layer to:
 2. Split the sentences into words
 3. Map words to integers
 
-Create a classification model
+Create a Classification Model
 
 Use the Keras Sequential API to define the sentiment classification model. In this case it is a "Continuous bag of words" style model.
 
@@ -28,4 +28,18 @@ Use the Keras Sequential API to define the sentiment classification model. In th
 
 4. The fixed-length output vector is piped through a fully-connected (Dense) layer with 16 hidden units.
 
-5, The last layer is densely connected with a single output node.
+5. The last layer is densely connected with a single output node.
+
+Compile and train the model using the `Adam` optimizer and `BinaryCrossentropy` loss. 
+
+Visualize the embeddings
+
+To visualize the embeddings, upload them to the embedding projector.
+
+Click on "Load data".
+
+Upload the two files you created above: vecs.tsv and meta.tsv.
+
+The embeddings you have trained will now be displayed. You can search for words to find their closest neighbors. For example, try searching for "beautiful". You may see neighbors like "wonderful".
+
+
