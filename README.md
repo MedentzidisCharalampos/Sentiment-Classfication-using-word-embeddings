@@ -2,11 +2,11 @@
 
 # Word Embeddings
 
-Word embeddings give us a way to use an efficient, dense representation in which similar words have a similar encoding.
-An embedding is a dense vector of floating point values.
-Instead of specifying the values for the embedding manually, they are trainable parameters (weights learned by the model during training, in the same way a model learns weights for a dense layer).  
-It is common to see word embeddings that are 8-dimensional (for small datasets), up to 1024-dimensions when working with large datasets.  
-A higher dimensional embedding can capture fine-grained relationships between words, but takes more data to learn.
+1. Word embeddings give us a way to use an efficient, dense representation in which similar words have a similar encoding.
+2. An embedding is a dense vector of floating point values.
+3. Instead of specifying the values for the embedding manually, they are trainable parameters (weights learned by the model during training, in the same way a model learns weights for a dense layer).  
+4. It is common to see word embeddings that are 8-dimensional (for small datasets), up to 1024-dimensions when working with large datasets.  
+5. A higher dimensional embedding can capture fine-grained relationships between words, but takes more data to learn.
 
 
 # The Dataset  
